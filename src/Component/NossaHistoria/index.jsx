@@ -13,10 +13,10 @@ function NossaHistoria() {
                 </article>
             </section>
             <section className='flex flex-wrap gap-8 w-auto justify-between'>
-                <img src="../../../public/images/maos.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="../../../public/images/jiujitsu.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="../../../public/images/muaythai.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="../../../public/images/dancarina.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
+                <img src="images/maos.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
+                <img src="images/jiujitsu.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
+                <img src="images/muaythai.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
+                <img src="images/dancarina.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
             </section>
         </section>
     )

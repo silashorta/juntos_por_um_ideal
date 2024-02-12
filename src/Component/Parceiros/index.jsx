@@ -15,7 +15,7 @@ function Parceiros() {
           {parceiro.imagem.map((imagem, i) => (
             <div key={i} className='flex flex-col items-center gap-4 shadow-lg  shadow-slate-500'>
               <div className='bg-gray-100 p-4 rounded w-52 flex flex-col justify-center items-center gap-4 h-full'>
-                <img src={`../../../public/images/parceiros/${imagem}`} alt={`Foto ${parceiro.descricao[i]}`} className='max-h-40 rounded' />
+                <img src={`images/parceiros/${imagem}`} alt={`Foto ${parceiro.descricao[i]}`} className='max-h-40 rounded' />
                 <small className='max-w-40 text-center text-dark-blue text-base font-outfit'>{parceiro.descricao[i]}</small>
               </div>
             </div>
