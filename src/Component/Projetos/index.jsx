@@ -43,7 +43,7 @@ function Projetos() {
   };
 
   return (
-    <section className='p-4 lg:p-16'>
+    <section className='p-4 lg:p-16 flex flex-col gap-4'>
       <h2 className='font-bebas-neue text-4xl text-dark-blue'>Projetos</h2>
       <h3 className='text-3xl text-gold font-bold font-outfit'>Primeira Ação Social</h3>
       <article className='flex flex-col lg:flex-row gap-4'>
