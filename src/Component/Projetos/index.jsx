@@ -54,7 +54,7 @@ function Projetos() {
               {acaoSocial[0].videos && Object.values(acaoSocial[0].videos).map((video, i) => (
                 <SwiperSlide key={i} className='h-full flex justify-center items-center' >
                   <video controls className='w-5/6 max-h-80' >
-                    <source src={`../../../public/images/primeira_acao_social/${video}`} type="video/mp4" />
+                    <source src={`images/primeira_acao_social/${video}`} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
                 </SwiperSlide>
@@ -67,7 +67,7 @@ function Projetos() {
         <div className='lg:w-1/2 h-96 '>
           <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap overflow-y-scroll'>
             {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
-              <img key={i} src={`../../../public/images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`} className='mt-4 m-auto rounded max-w-full cursor-pointer' onClick={() => openModal(`../../../public/images/primeira_acao_social/${imagem}`)} />
+              <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`} className='mt-4 m-auto rounded max-w-full cursor-pointer' onClick={() => openModal(`../../../public/images/primeira_acao_social/${imagem}`)} />
             ))}
           </div>
         </div>
