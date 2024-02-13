@@ -23,7 +23,7 @@ function ImageModal({ isOpen, imageUrl, onRequestClose }) {
       }}
     >
       <button onClick={onRequestClose} className='absolute top-4 right-4 text-red-600 bg-slate-100 rounded-lg p-1'><IoMdClose /></button>
-      <img src={`${imageUrl}`} alt="Imagem" style={{ maxWidth: '100%' }} />
+      <img src={`${imageUrl}`} alt="Imagem" style={{ maxWidth: '100%', maxHeight: '100%' }} />
     </Modal>
   );
 }
