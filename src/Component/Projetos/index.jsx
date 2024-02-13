@@ -109,7 +109,7 @@ function Projetos() {
                 {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
                   <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`}
                     className='w-40 h-40 object-cover flex gap-4 rounded m-auto cursor-pointer'
-                    onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '18vw' }} />
+                    onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '30vw' }} />
                 ))}
               </div>
             </div>
@@ -127,8 +127,8 @@ function Projetos() {
               <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
                 {jiujitsu[0].images && Object.values(jiujitsu[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_jiujitsu/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='w-40 h-60 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
-                    onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '20vw' }} />
+                    className='w-40 h-40 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
+                    onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '18vw' }} />
                 ))}
               </div>
             </div>
@@ -146,7 +146,7 @@ function Projetos() {
               <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap justify justify-between gap-2 overflow-y-scroll'>
                 {kickboxing[0].images && Object.values(kickboxing[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_kickboxing/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='w-40 h-60 object-cover object-top flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-40 h-40 object-cover object-top flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openKickBoxingModal(`images/projeto_kickboxing/${imagem}`)} style={{ width: '30vw' }} />
                 ))}
               </div>
