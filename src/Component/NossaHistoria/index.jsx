@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function NossaHistoria() {
     return (
@@ -6,20 +6,18 @@ function NossaHistoria() {
             <h2 className='font-bebas-neue text-4xl text-dark-blue'>Nossa História</h2>
             <section className=''>
                 <article className='flex flex-col md:flex-row gap-8'>
-                    <h3 className='lg:w-1/2 text-5xl text-gray-600'>Tell the story of how your company came about</h3>
-                    <p className='lg:w-1/2 text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac adipiscing velit non nulla in amet pellentesque.
-                    Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet pellentesque sit pulvinar lorem mi a, euismod risus rhoncus. Elementum ullamcorper nec, habitasse vulputate. Eget dictum quis est sed egestas tellus, a lectus. Quam ullamcorper in fringilla arcu aliquet fames arcu.Lacinia eget faucibus urna, nam risus nec elementum cras porta.
-                    Sed elementum, sed dolor purus dolor dui. Ut dictum nulla pulvinar vulputate sit sagittis in eleifend dignissim. Natoque mauris cras molestie velit. Maecenas eget adipiscing quisque viverra lectus arcu, tincidunt ultrices pellentesque.</p>
+                    <h3 className='lg:w-1/2 text-5xl text-gray-600'>Como tudo começou</h3>
+                    <p className='lg:w-1/2 text-lg'>Nossa história remonta ao ano de 2015, quando um grupo apaixonado de motociclistas, cientes das demandas e desafios enfrentados pela comunidade de motociclistas, decidiu unir forças para criar algo verdadeiramente significativo. Surgiu assim a ONG Mãos Solidárias. Movidos pelo espírito de solidariedade e pela vontade de fazer a diferença, esses visionários iniciaram uma jornada que moldaria o futuro do motociclismo em nosso país.</p>
                 </article>
             </section>
-            <section className='flex flex-wrap gap-8 w-auto justify-between'>
-                <img src="images/maos.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="images/jiujitsu.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="images/muaythai.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
-                <img src="images/dancarina.jpg" alt="Imagem Nossa história" className='h-80 rounded'/>
+            <section className='flex flex-wrap gap-8 w-auto items-center justify-between'>
+                <img src="images/maos.jpg" alt="Motociclistas unidos" className='h-80 rounded shadow-md'/>
+                <img src="images/jiujitsu.jpg" alt="Projeto JiuJitsu" className='h-80 rounded shadow-md'/>
+                <img src="images/muaythai.jpg" alt="Projeto Muay Thai" className='h-80 rounded shadow-md'/>
+                <img src="images/dancarina.jpg" alt="Dançarina de rua" className='h-80 rounded shadow-md'/>
             </section>
         </section>
-    )
+    );
 }
 
-export default NossaHistoria
+export default NossaHistoria;

@@ -6,8 +6,8 @@ function Highlights() {
         <section className='flex flex-col lg:flex-row p-4 lg:p-16 justify-between gap-8'>
             <div className='lg:w-1/2 flex flex-col gap-8'>
                 <div className='flex flex-col gap-4'>
-                    <h3 className='text-5xl text-gray-600'>Highlight achievements by the numbers</h3>
-                    <p className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat possimus, enim provident nostrum doloremque, doloribus quidem, nesciunt blanditiis sit sed similique. Quaerat beatae inventore nihil. Repellat nemo animi dignissimos.</p>
+                    <h3 className='text-5xl text-gray-600'>Realizações em Destaque</h3>
+                    <p className='text-lg'>Nossa organização tem se destacado ao longo dos anos por suas conquistas notáveis, refletindo nosso compromisso com a comunidade de motociclistas e seu bem-estar. Aqui estão alguns dos nossos marcos mais significativos:</p>
                 </div>
                 <div className='flex flex-col gap-16'>
                     <div className='flex flex justify-around'>
