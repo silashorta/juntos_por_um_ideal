@@ -82,7 +82,7 @@ function Projetos() {
   };
 
   return (
-    <section className='p-4 lg:p-16 flex flex-col gap-4'>
+    <section className='p-4 lg:p-16 flex flex-col gap-4 bg-stone-50'>
       <h2 className='font-bebas-neue text-4xl text-dark-blue'>Projetos</h2>
       <div className='flex flex-col gap-16'>
         <section className='flex flex-col gap-4'>
@@ -90,7 +90,7 @@ function Projetos() {
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para vídeos */}
             <div className='lg:w-1/2 h-auto mr-4'>
-              <div className='bg-zinc-100 p-4 rounded h-full flex'>
+              <div className='bg-zinc-200 p-4 rounded h-full flex'>
                 <Swiper pagination={true} controller={true} modules={[Pagination]} className="mySwiper pointer">
                   {acaoSocial[0].videos && Object.values(acaoSocial[0].videos).map((video, i) => (
                     <SwiperSlide key={i} className='h-full flex justify-center items-center' >
@@ -105,10 +105,10 @@ function Projetos() {
             </div>
             {/* Carrossel para imagens */}
             <div className='lg:w-1/2 h-96 '>
-              <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
+              <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
                 {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
                   <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='max-w-full flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-40 h-40 object-cover flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '18vw' }} />
                 ))}
               </div>
@@ -123,11 +123,11 @@ function Projetos() {
           <h3 className='text-3xl text-gold font-bold font-outfit'>Projeto JiuJitsu</h3>
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para imagens */}
-            <div className='h-96 lg:h-screen '>
-              <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
+            <div className='h-96 lg:h-auto '>
+              <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
                 {jiujitsu[0].images && Object.values(jiujitsu[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_jiujitsu/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='max-w-full flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-40 h-60 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '20vw' }} />
                 ))}
               </div>
@@ -142,11 +142,11 @@ function Projetos() {
           <h3 className='text-3xl text-gold font-bold font-outfit'>Projeto KickBoxing</h3>
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para imagens */}
-            <div className='lg:h-screen '>
-              <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap justify justify-between gap-2 overflow-y-scroll'>
+            <div className='lg:h-auto '>
+              <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap justify justify-between gap-2 overflow-y-scroll'>
                 {kickboxing[0].images && Object.values(kickboxing[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_kickboxing/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='max-w-full flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-40 h-60 object-cover object-top flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openKickBoxingModal(`images/projeto_kickboxing/${imagem}`)} style={{ width: '30vw' }} />
                 ))}
               </div>
