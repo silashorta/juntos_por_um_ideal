@@ -53,7 +53,7 @@ function Projetos() {
             <Swiper pagination={true} controller={true} modules={[Pagination]} className="mySwiper pointer">
               {acaoSocial[0].videos && Object.values(acaoSocial[0].videos).map((video, i) => (
                 <SwiperSlide key={i} className='h-full flex justify-center items-center' >
-                  <video controls className='w-5/6 max-h-80' >
+                  <video controls className='w-full max-h-80 rounded' >
                     <source src={`images/primeira_acao_social/${video}`} type="video/mp4" />
                     Seu navegador não suporta o elemento de vídeo.
                   </video>
@@ -65,15 +65,17 @@ function Projetos() {
 
         {/* Carrossel para imagens */}
         <div className='lg:w-1/2 h-96 '>
-          <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap overflow-y-scroll'>
+          <div className='bg-zinc-100 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
             {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
-              <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`} className='mt-4 m-auto rounded max-w-full cursor-pointer' onClick={() => openModal(`../../../public/images/primeira_acao_social/${imagem}`)} />
+              <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`} 
+              className='max-w-full flex gap-4 rounded m-auto cursor-pointer' 
+              onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{width: '40vw'}}/>
             ))}
           </div>
         </div>
       </article>
       {/* Modal para exibir a imagem */}
-      <ImageModal isOpen={modalIsOpen} imageUrl={selectedImage} onRequestClose={closeModal} />
+      <ImageModal isOpen={modalIsOpen} imageUrl={selectedImage} onRequestClose={closeModal} className=''/>
     </section>
   );
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import Modal from 'react-modal';
 
+import { IoMdClose } from "react-icons/io";
+
+
 function ImageModal({ isOpen, imageUrl, onRequestClose }) {
   return (
     <Modal
@@ -12,13 +15,15 @@ function ImageModal({ isOpen, imageUrl, onRequestClose }) {
           zIndex: 9999 // Define um z-index maior para o overlay do modal
         },
         content: {
-          zIndex: 9999 // Define um z-index maior para o conteúdo do modal
+          zIndex: 9999, // Define um z-index maior para o conteúdo do modal
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         },
-        heigth: '100vh'
       }}
     >
-      <button onClick={onRequestClose}>Fechar Modal</button>
-      <img src={`../../../public/images/primeira_acao_social/${imageUrl}`} alt="Imagem" className='m-auto h-full'/>
+      <button onClick={onRequestClose} className='absolute top-4 right-4 text-red-600 bg-slate-100 rounded-lg p-1'><IoMdClose /></button>
+      <img src={`${imageUrl}`} alt="Imagem" style={{ maxWidth: '100%' }} />
     </Modal>
   );
 }

@@ -4,8 +4,8 @@ import logo from '../../../../public/images/anr_logo.png'
 function HeroBanner() {
   return (
     <section className='flex flex-col items-center justify-center p-8 lg:p-16 gap-14'>
-      <h2 className='text-8xl text-white text-center font-bebas-neue'>Associação Nacional de Reabilitação</h2>
-      <h2 className='text-9xl text-white text-center font-bebas-neue'>JUNTOS POR UM IDEAL</h2>
+      <h2 className='text-7xl text-white text-center font-bebas-neue'>Associação Nacional de Reabilitação</h2>
+      <h2 className='text-8xl text-white text-center font-bebas-neue'>JUNTOS POR UM IDEAL</h2>
       <img src={logo} alt="" className='h-80' />
       <div className='flex flex-col md:flex-row gap-10'>
         <article className='lg:w-1/2 flex flex-col p-4 rounded gap-4 bg-stone-800 bg-opacity-40'>

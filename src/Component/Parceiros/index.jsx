@@ -13,9 +13,9 @@ function Parceiros() {
       {parceiros.map((parceiro, index) => (
         <div key={index} className='flex flex-wrap gap-4 justify-around'>
           {parceiro.imagem.map((imagem, i) => (
-            <div key={i} className='flex flex-col items-center gap-4 shadow-lg  shadow-slate-500'>
-              <div className='bg-gray-100 p-4 rounded w-52 flex flex-col justify-center items-center gap-4 h-full'>
-                <img src={`images/parceiros/${imagem}`} alt={`Foto ${parceiro.descricao[i]}`} className='max-h-40 rounded' />
+            <div key={i} className='max-h-auto max-w-auto flex flex-wrap flex-col items-center gap-8 shadow-lg  shadow-slate-500'>
+              <div className='bg-gray-100 p-1 rounded h-full w-40 lg:w-52 flex flex-col justify-center items-center gap-4'>
+                <img src={`images/parceiros/${imagem}`} alt={`Foto ${parceiro.descricao[i]}`} className='max-h-16 lg:max-h-32 rounded' />
                 <small className='max-w-40 text-center text-dark-blue text-base font-outfit'>{parceiro.descricao[i]}</small>
               </div>
             </div>
