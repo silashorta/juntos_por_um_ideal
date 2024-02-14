@@ -2,7 +2,7 @@ import React from 'react';
 
 function NossaHistoria() {
     return (
-        <section className='flex flex-col gap-8 p-4 lg:p-16 bg-gray-200'>
+        <section className='flex flex-col gap-8 px-4 py-8 lg:p-16 bg-gray-200'>
             <h2 className='font-bebas-neue text-4xl text-dark-blue'>Nossa História</h2>
             <section className=''>
                 <article className='flex flex-col md:flex-row gap-8'>

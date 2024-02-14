@@ -3,7 +3,7 @@ import CountUp from 'react-countup';
 
 function Highlights() {
     return (
-        <section className='flex flex-col lg:flex-row p-4 lg:p-16 justify-between gap-8'>
+        <section className='flex flex-col lg:flex-row px-4 py-8 lg:p-16 justify-between gap-8'>
             <div className='lg:w-1/2 flex flex-col gap-8'>
                 <div className='flex flex-col gap-4'>
                     <h3 className='text-5xl text-gray-600'>Realizações em Destaque</h3>

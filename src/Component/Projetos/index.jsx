@@ -82,7 +82,7 @@ function Projetos() {
   };
 
   return (
-    <section className='p-4 lg:p-16 flex flex-col gap-4 bg-stone-50'>
+    <section className='px-4 py-8 lg:p-16 flex flex-col gap-4 bg-stone-50'>
       <h2 className='font-bebas-neue text-4xl text-dark-blue'>Projetos</h2>
       <div className='flex flex-col gap-16'>
         <section className='flex flex-col gap-4'>
@@ -108,7 +108,7 @@ function Projetos() {
               <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
                 {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
                   <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='w-40 h-40 object-cover flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-36 h-36 object-cover flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '' }} />
                 ))}
               </div>
@@ -127,7 +127,7 @@ function Projetos() {
               <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap overflow-y-scroll gap-2'>
                 {jiujitsu[0].images && Object.values(jiujitsu[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_jiujitsu/${imagem}`} alt={`Imagem ${i + 1}`}
-                    className='w-40 h-40 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
+                    className='w-36 h-36 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
                     onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '' }} />
                 ))}
               </div>

@@ -9,7 +9,7 @@ function Parceiros() {
   return (
     <section className='px-4 py-8 lg:p-16 flex flex-col gap-8 bg-dark-blue text-white'>
       <h2 className='font-bebas-neue text-4xl'>Parceiros</h2>
-      <p>Conheça os nossos parceiros:</p>
+      <p className='text-lg'>Conheça os nossos parceiros:</p>
       {parceiros.map((parceiro, index) => (
         <div key={index} className='flex lg:flex-wrap gap-4 p-4 lg:justify-center overflow-y-auto'>
           {parceiro.imagem.map((imagem, i) => (

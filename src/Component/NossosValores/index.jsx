@@ -23,11 +23,11 @@ function NossosValores() {
     ];
 
     return (
-        <section className='flex flex-col p-4 lg:p-16 gap-8'>
+        <section className='flex flex-col px-4 py-8 lg:p-16 gap-8'>
             <h2 className='font-bebas-neue text-4xl text-dark-blue'>Nossos Valores</h2>
             <div className='flex flex-col gap-6 text-center'>
                 <h3 className='text-5xl text-gray-600'>O que valorizamos</h3>
-                <p>Nossos valores são a base de tudo o que fazemos. Eles representam os princípios pelos quais vivemos e orientam todas as nossas ações e decisões:</p>
+                <p className='text-lg'>Nossos valores são a base de tudo o que fazemos. Eles representam os princípios pelos quais vivemos e orientam todas as nossas ações e decisões:</p>
             </div>
             <div className='flex flex-col lg:flex-row gap-8 lg:gap-12'>
                 {/* Mapeando os valores e renderizando dinamicamente */}
@@ -36,7 +36,7 @@ function NossosValores() {
                         <hr className=''></hr>
                         <div className='h-full m-auto text-dark-blue'>{valor.icon}</div>
                         <h3 className='h-full font-archivo-black text-dark-blue'>{valor.title}</h3>
-                        <p className='h-full font-varela-round'>{valor.description}</p>
+                        <p className='h-full font-varela-round text-lg'>{valor.description}</p>
                     </div>
                 ))}
             </div>
