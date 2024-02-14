@@ -87,9 +87,9 @@ function Projetos() {
       <div className='flex flex-col gap-16'>
         <section className='flex flex-col gap-4'>
           <h3 className='text-3xl text-gold font-bold font-outfit'>Primeira Ação Social</h3>
-          <article className='flex flex-col lg:flex-row gap-4'>
+          <article className='flex flex-col lg:flex-row'>
             {/* Carrossel para vídeos */}
-            <div className='lg:w-1/2 h-auto mr-4'>
+            <div className='lg:w-1/2 h-auto'>
               <div className='bg-zinc-200 p-4 rounded h-full flex'>
                 <Swiper pagination={true} controller={true} modules={[Pagination]} className="mySwiper pointer">
                   {acaoSocial[0].videos && Object.values(acaoSocial[0].videos).map((video, i) => (
@@ -109,7 +109,7 @@ function Projetos() {
                 {acaoSocial[0].images && Object.values(acaoSocial[0].images).map((imagem, i) => (
                   <img key={i} src={`images/primeira_acao_social/${imagem}`} alt={`Imagem ${i + 1}`}
                     className='w-40 h-40 object-cover flex gap-4 rounded m-auto cursor-pointer'
-                    onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '30vw' }} />
+                    onClick={() => openModal(`images/primeira_acao_social/${imagem}`)} style={{ width: '' }} />
                 ))}
               </div>
             </div>
@@ -128,7 +128,7 @@ function Projetos() {
                 {jiujitsu[0].images && Object.values(jiujitsu[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_jiujitsu/${imagem}`} alt={`Imagem ${i + 1}`}
                     className='w-40 h-40 object-cover object-center flex gap-4 rounded m-auto cursor-pointer'
-                    onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '18vw' }} />
+                    onClick={() => openJiujitsuModal(`images/projeto_jiujitsu/${imagem}`)} style={{ width: '' }} />
                 ))}
               </div>
             </div>
@@ -142,12 +142,12 @@ function Projetos() {
           <h3 className='text-3xl text-gold font-bold font-outfit'>Projeto KickBoxing</h3>
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para imagens */}
-            <div className='lg:h-auto '>
-              <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap justify justify-between gap-2 overflow-y-scroll'>
+            <div className='lg:h-auto w-full'>
+              <div className='bg-zinc-200 p-4 rounded h-full flex flex-wrap gap-2 overflow-y-scroll'>
                 {kickboxing[0].images && Object.values(kickboxing[0].images).map((imagem, i) => (
                   <img key={i} src={`images/projeto_kickboxing/${imagem}`} alt={`Imagem ${i + 1}`}
                     className='w-40 h-40 object-cover object-top flex gap-4 rounded m-auto cursor-pointer'
-                    onClick={() => openKickBoxingModal(`images/projeto_kickboxing/${imagem}`)} style={{ width: '30vw' }} />
+                    onClick={() => openKickBoxingModal(`images/projeto_kickboxing/${imagem}`)} style={{ width: '' }} />
                 ))}
               </div>
             </div>
