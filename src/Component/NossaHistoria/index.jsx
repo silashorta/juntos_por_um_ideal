@@ -50,7 +50,7 @@ function NossaHistoria() {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper">
+                    className="mySwiper overflow-hidden">
                     {Object.values(images).map((image, index) => (
                         <SwiperSlide key={index}>
                             <img src={`images/obra/${image}`} alt="" className='w-full object-cover' style={{ height: '36rem' }} />
