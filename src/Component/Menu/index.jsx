@@ -4,7 +4,9 @@ import logo from '../../../public/images/anr_logo.png'
 
 function Menu() {
     return (
-        <menu className='h-20 flex items-center justify-between p-4'>
+        <menu 
+        id='inicio'
+        className='h-20 flex items-center justify-between p-4'>
             <img src={logo} alt="Logotipo da Associação Nacional de Reabilitação" className='h-14'/>
             <nav>
                 <ul className='flex gap-4 text-black'>

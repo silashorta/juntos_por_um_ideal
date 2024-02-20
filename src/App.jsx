@@ -1,4 +1,6 @@
+import { Route, Router, Routes } from 'react-router-dom'
 import './App.css'
+import Depoimentos from './Component/Depoimentos'
 import Footer from './Component/Footer'
 import Hero from './Component/Hero'
 import Highlights from './Component/Highlights'
@@ -7,8 +9,15 @@ import NossaHistoria from './Component/NossaHistoria'
 import NossosValores from './Component/NossosValores'
 import Parceiros from './Component/Parceiros'
 import Projetos from './Component/Projetos'
+import { animateScroll as scroll } from 'react-scroll';
 
 function App() {
+  const scrollTo = (id) => {
+    scroll.scrollTo(`#${id}`, {
+      duration: 500,
+      smooth: true,
+    });
+  };
 
   return (
     <div>
@@ -16,15 +25,16 @@ function App() {
         <Menu />
       </header>
       <main>
-        <Hero />
-        {<NossaHistoria />}
+        <Hero id="inicio"/>
+        {<NossaHistoria id="nossa-historia"/>}
         {/* <Highlights /> */}
-        <Parceiros />
-        <NossosValores />
-        <Projetos />
+        <Parceiros id="parceiros"/>
+        <NossosValores id="nossos-valores"/>
+        <Projetos id="projetos"/>
+        <Depoimentos id="depoimentos"/>
       </main>
       <footer>
-        <Footer />
+      <Footer scrollTo={scrollTo} />
       </footer>
     </div>
   )

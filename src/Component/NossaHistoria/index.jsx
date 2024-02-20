@@ -23,6 +23,7 @@ function NossaHistoria() {
 
     return (
         <section
+        id='nossa-historia'
             className='max-w-full flex flex-col gap-8 px-4 py-8 lg:p-16 bg-gray-200'>
             <motion.h2
                 animate={{ opacity: isInView ? 1 : 0 }}

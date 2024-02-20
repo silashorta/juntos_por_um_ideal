@@ -87,6 +87,7 @@ function Projetos() {
 
   return (
     <motion.section
+    id='projetos'
     ref={ref}
     animate={{ y: isInView ? 0 : 100, opacity: isInView ? 1 : 0 }}
     transition={{ ease: "easeIn", duration: 1 }}

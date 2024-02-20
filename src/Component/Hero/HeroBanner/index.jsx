@@ -19,7 +19,7 @@ function HeroBanner() {
       <motion.h2
         animate={{ opacity: isInView ? 1 : 0 }}
         transition={{ ease: "easeInOut", duration: 1 }}
-        className='text-6xl lg:text-8xl text-center font-archivo-black text-dark-gold'>JUNTOS POR UM IDEAL
+        className='text-6xl lg:text-8xl text-center font-lilita-one text-dark-gold'>JUNTOS POR UM IDEAL
       </motion.h2>
     </section>
   )
