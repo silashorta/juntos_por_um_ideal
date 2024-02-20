@@ -29,18 +29,16 @@ function NossosValores() {
 
     return (
         <section
-            key={ref}
+        ref={ref}
             id='nossos-valores'
             className='overflow-hidden flex flex-col px-4 py-8 lg:p-16 gap-8'>
             <motion.h2
-                key={ref}
                 animate={{ opacity: isInView ? 1 : 0, scale: isInView ? 1 : 0.95 }}
                 transition={{ ease: "easeIn", duration: 0.5 }}
                 className='font-bebas-neue text-4xl text-dark-blue'>Nossos Valores
             </motion.h2>
             <div className='flex flex-col gap-6 text-center'>
                 <motion.h3
-                    key={ref}
                     animate={{ opacity: isInView ? 1 : 0 }}
                     transition={{ ease: "easeIn", duration: 0.5 }}
                     className='text-5xl text-gray-600'>O que valorizamos
@@ -51,7 +49,6 @@ function NossosValores() {
                 {/* Mapeando os valores e renderizando dinamicamente */}
                 {valores.map((valor, index) => (
                     <div
-                        ref={ref}
                         key={index} className='flex flex-col text-center gap-2'>
                         <hr className=''></hr>
                         <motion.div
