@@ -22,12 +22,12 @@ function Footer() {
                 </div>
                 <nav className='flex flex-wrap lg:flex-col justify-center gap-4 text-sm'>
                     <ScrollLink
-                        to="inicio"
+                        to="top"
                         smooth={true}
                         duration={500}
                         className="cursor-pointer"
                     >
-                        <a href="#inicio">Início</a>
+                        <a href="top">Inicio</a>
                     </ScrollLink>
                     <ScrollLink
                         to="nossa-historia"

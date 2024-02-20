@@ -10,6 +10,7 @@ function Hero() {
 
     return (
         <section 
+        id='top'
         ref={ref} className=''>
             <div className='h-full lg:h-screen min-h-96 flex flex-col lg:flex-row justify-start gap-8'
                 style={{ backgroundImage: `url(${fotoHero})`, backgroundSize: 'cover', backgroundPosition: 'right' }}>
