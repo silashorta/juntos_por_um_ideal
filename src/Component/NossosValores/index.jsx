@@ -29,6 +29,7 @@ function NossosValores() {
 
     return (
         <section
+            key={ref}
             id='nossos-valores'
             className='overflow-hidden flex flex-col px-4 py-8 lg:p-16 gap-8'>
             <motion.h2

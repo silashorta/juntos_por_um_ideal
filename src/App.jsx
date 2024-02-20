@@ -10,6 +10,7 @@ import NossosValores from './Component/NossosValores'
 import Parceiros from './Component/Parceiros'
 import Projetos from './Component/Projetos'
 import { animateScroll as scroll } from 'react-scroll';
+import MenuResponsive from './Component/MenuResponsive'
 
 function App() {
   const scrollTo = (id) => {
@@ -23,6 +24,7 @@ function App() {
     <div>
       <header>
         <Menu />
+        <MenuResponsive />
       </header>
       <main>
         <Hero id="inicio"/>
