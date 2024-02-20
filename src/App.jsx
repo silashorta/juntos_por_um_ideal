@@ -17,8 +17,8 @@ function App() {
       </header>
       <main>
         <Hero />
-        <NossaHistoria />
-        <Highlights />
+        {<NossaHistoria />}
+        {/* <Highlights /> */}
         <Parceiros />
         <NossosValores />
         <Projetos />

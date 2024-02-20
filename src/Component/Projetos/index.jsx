@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import ImageModal from '../Modal/Modal';
+import { motion, useInView } from 'framer-motion';
 
 function Projetos() {
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+
   const [acaoSocialModalIsOpen, setAcaoSocialModalIsOpen] = useState(false);
   const [jiujitsuModalIsOpen, setJiujitsuModalIsOpen] = useState(false);
   const [kickboxingModalIsOpen, setkickBoxingModalIsOpen] = useState(false);
@@ -82,10 +86,15 @@ function Projetos() {
   };
 
   return (
-    <section className='px-4 py-8 lg:p-16 flex flex-col gap-4 bg-stone-50'>
+    <motion.section
+    ref={ref}
+    animate={{ y: isInView ? 0 : 100, opacity: isInView ? 1 : 0 }}
+    transition={{ ease: "easeIn", duration: 1 }}
+    className='max-w-screen px-4 py-8 lg:p-16 flex flex-col gap-4 bg-stone-50'>
       <h2 className='font-bebas-neue text-4xl text-dark-blue'>Projetos</h2>
       <div className='flex flex-col gap-16'>
-        <section className='flex flex-col gap-4'>
+        <motion.section
+          className='flex flex-col gap-4'>
           <h3 className='text-3xl text-gold font-bold font-outfit'>Primeira Ação Social</h3>
           <article className='flex flex-col lg:flex-row'>
             {/* Carrossel para vídeos */}
@@ -116,10 +125,11 @@ function Projetos() {
           </article>
           {/* Modal para exibir a imagem */}
           <ImageModal isOpen={acaoSocialModalIsOpen} imageUrl={selectedImage} onRequestClose={closeModal} className='' />
-        </section>
+        </motion.section>
 
 
-        <section className='flex flex-col gap-4'>
+        <motion.section
+          className='flex flex-col gap-4'>
           <h3 className='text-3xl text-gold font-bold font-outfit'>Projeto JiuJitsu</h3>
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para imagens */}
@@ -135,10 +145,11 @@ function Projetos() {
           </article>
           {/* Modal para exibir a imagem */}
           <ImageModal isOpen={jiujitsuModalIsOpen} imageUrl={selectedImage} onRequestClose={closeModal} className='' />
-        </section>
+        </motion.section>
 
 
-        <section className='flex flex-col gap-4'>
+        <motion.section
+          className='flex flex-col gap-4'>
           <h3 className='text-3xl text-gold font-bold font-outfit'>Projeto KickBoxing</h3>
           <article className='flex flex-col lg:flex-row gap-4'>
             {/* Carrossel para imagens */}
@@ -154,9 +165,9 @@ function Projetos() {
           </article>
           {/* Modal para exibir a imagem */}
           <ImageModal isOpen={kickboxingModalIsOpen} imageUrl={selectedImage} onRequestClose={closeModal} className='' />
-        </section>
+        </motion.section>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
