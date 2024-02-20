@@ -20,7 +20,7 @@ function MenuResponsive() {
             <div className='w-full flex justify-between items-center'>
                 <img src={logo} alt="Logotipo da Associação Nacional de Reabilitação" className='h-14' />
                 <nav className={`flex flex-wrap justify-center gap-4 text-sm text-dark-blue font-outfit`}>
-                    <FaBars className="block lg:hidden cursor-pointer" onClick={toggleMenu} />
+                    <FaBars className="block lg:hidden cursor-pointer text-xl" onClick={toggleMenu} />
                 </nav>
             </div>
             {menuOpen && (
