@@ -27,16 +27,16 @@ function App() {
         <MenuResponsive />
       </header>
       <main>
-        <Hero id="inicio"/>
-        {<NossaHistoria id="nossa-historia"/>}
+        <Hero id="inicio" />
+        {<NossaHistoria id="nossa-historia" />}
         {/* <Highlights /> */}
-        <Parceiros id="parceiros"/>
-        <NossosValores id="nossos-valores"/>
-        <Projetos id="projetos"/>
-        <Depoimentos id="depoimentos"/>
+        <Parceiros id="parceiros" />
+        <NossosValores id="nossos-valores" />
+        <Projetos id="projetos" />
+        <Depoimentos id="depoimentos" />
       </main>
       <footer>
-      <Footer scrollTo={scrollTo} />
+        <Footer scrollTo={scrollTo} />
       </footer>
     </div>
   )

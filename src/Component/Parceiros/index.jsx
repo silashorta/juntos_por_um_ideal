@@ -1,8 +1,8 @@
 import React from 'react';
 
 const parceiros = [{
-  imagem: ['alcateia.jpg', 'aliados_jiu_jitsu.jpg', 'amo_sp.jpg', 'correntes_de_aco.jpg', 'cristina_titania.jpg', 'ecleticas.jpg', 'femc.jpg', 'gambas_da_urca.jpg', 'golfinhos.jpg', 'harry_potter.jpg', 'lon_brasil.jpg', 'mam_brasil.jpg', 'os_gavioes.jpg', 'pirados.jpg', 'steel_goose.jpg', 'tavula.jpg', 'veneno_na_lata.jpg'],
-  descricao: ['Equipe Alcateia RJ', 'Aliados Jiu Jitsu', 'Associação dos Moto Clubes do Estado de São Paulo', 'Correntes de Aço Triciclitas - Irajá - RJ', 'Cristina Titânia Locutora', 'Ecléticas Moto Clube RJ', 'FEMC - Federação Maranhense de Moto Clube', 'Gambás da Urca - MG', 'Golfinhos Irajá - RJ', 'Harry Potter Moto Clube - RJ', 'LON Brasil', 'Ministério Adventista de Motociclistas Brasil', 'Os Gaviões Paraíba do Sul e Três Rios - RJ', 'Pirados RJ', 'Steel Goose Moto Clube - RJ', 'Távula Redonda -RJ', 'Veneno na Lata - RJ']
+  imagem: ['ABFIP.jpg', 'alcateia.jpg', 'aliados_jiu_jitsu.jpg', 'amo_sp.jpg', 'correntes_de_aco.jpg', 'cristina_titania.jpg', 'ecleticas.jpg', 'femc.jpg', 'gambas_da_urca.jpg', 'golfinhos.jpg', 'harry_potter.jpg', 'lon_brasil.jpg', 'mam_brasil.jpg', 'os_gavioes.jpg', 'pirados.jpg', 'steel_goose.jpg', 'tavula.jpg', 'veneno_na_lata.jpg'],
+  descricao: ['ABFIP', 'Equipe Alcateia RJ', 'Aliados Jiu Jitsu', 'Associação dos Moto Clubes do Estado de São Paulo', 'Correntes de Aço Triciclitas - Irajá - RJ', 'Cristina Titânia Locutora', 'Ecléticas Moto Clube RJ', 'FEMC - Federação Maranhense de Moto Clube', 'Gambás da Urca - MG', 'Golfinhos Irajá - RJ', 'Harry Potter Moto Clube - RJ', 'LON Brasil', 'Ministério Adventista de Motociclistas Brasil', 'Os Gaviões Paraíba do Sul e Três Rios - RJ', 'Pirados RJ', 'Steel Goose Moto Clube - RJ', 'Távula Redonda -RJ', 'Veneno na Lata - RJ']
 }];
 
 function Parceiros() {

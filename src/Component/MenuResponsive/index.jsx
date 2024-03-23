@@ -25,62 +25,64 @@ function MenuResponsive() {
             </div>
             {menuOpen && (
                 <div className='flex'>
-                    <div className='p-4 flex flex-col items-center gap-4 h-full bg-white fixed top-0 left-0 right-0 font-outfit z-50 '>
-                        <IoMdClose className='self-end text-xl' onClick={toggleMenu}/>
-                        <ScrollLink
-                            to="inicio"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Início
-                        </ScrollLink>
-                        <ScrollLink
-                            to="nossa-historia"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Nossa História
-                        </ScrollLink>
-                        <ScrollLink
-                            to="parceiros"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Parceiros
-                        </ScrollLink>
-                        <ScrollLink
-                            to="nossos-valores"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Nossos Valores
-                        </ScrollLink>
-                        <ScrollLink
-                            to="projetos"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Projetos
-                        </ScrollLink>
-                        <ScrollLink
-                            to="depoimentos"
-                            smooth={true}
-                            duration={500}
-                            className="cursor-pointer py-2 px-4 hover:bg-gray-200"
-                            onClick={toggleMenu}
-                        >
-                            Depoimentos
-                        </ScrollLink>
+                    <div className='p-4 flex flex-col justify-center items-center gap-4 h-full bg-white fixed top-0 left-0 right-0 font-outfit z-50 '>
+                        <IoMdClose className='self-end absolute top-8 text-xl' onClick={toggleMenu}/>
+                        <div className='flex flex-col justify-center items-center'>
+                            <ScrollLink
+                                to="inicio"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Início
+                            </ScrollLink>
+                            <ScrollLink
+                                to="nossa-historia"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Nossa História
+                            </ScrollLink>
+                            <ScrollLink
+                                to="parceiros"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Parceiros
+                            </ScrollLink>
+                            <ScrollLink
+                                to="nossos-valores"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Nossos Valores
+                            </ScrollLink>
+                            <ScrollLink
+                                to="projetos"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Projetos
+                            </ScrollLink>
+                            <ScrollLink
+                                to="depoimentos"
+                                smooth={true}
+                                duration={500}
+                                className="cursor-pointer py-2 px-4 hover:bg-gray-200"
+                                onClick={toggleMenu}
+                            >
+                                Depoimentos
+                            </ScrollLink>
+                        </div>
                     </div>
                 </div>
             )}

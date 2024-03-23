@@ -71,8 +71,12 @@ function Footer() {
                     </ScrollLink>
                 </nav>
                 <nav className='flex lg:flex-col justify-center gap-8'>
-                    <FaInstagram className='text-3xl' />
-                    <FaFacebookF className='text-3xl' />
+                    <a href="https://www.instagram.com/anrjpi" rel='noreferrer' target='_blank'>
+                        <FaInstagram className='text-3xl' />
+                    </a>
+                    <a href="https://m.facebook.com/people/Associa%C3%A7%C3%A3o-Nacional-de-Reabilita%C3%A7%C3%A3o-Juntos-por-um-Ideal/100080212494257/" rel='noreferrer' target='_blank'>
+                        <FaFacebookF className='text-3xl' />
+                    </a>
                 </nav>
             </div>
             <div>

@@ -22,7 +22,7 @@ const Carroussel = ({ images }) => {
         <div className='flex flex-col gap-8 p-4'>
             <h2 className='font-bebas-neue text-4xl text-dark-blue'>Depoimentos</h2>
             <p>Explore os depoimentos inspiradores de quem conhece e faz acontecer o nosso trabalho.</p>
-            <div className="flex justify-center gap-4 bg-gray-100">
+            <div className="flex justify-center gap-4 bg-gray-50 max-w-screen">
                 <button onClick={goToPreviousSlide}><MdNavigateBefore className='bg-gray-300 rounded-full text-2xl'/></button>
                 <video src={images[currentImageIndex]} controls className='w-5/6 h-screen object-contain'></video>
                 <button onClick={goToNextSlide}><MdNavigateNext className='bg-gray-300 rounded-full text-2xl'/></button>
